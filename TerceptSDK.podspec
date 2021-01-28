@@ -24,7 +24,7 @@
 
 Pod::Spec.new do |spec|
   spec.name         = "TerceptSDK"
-  spec.version      = "1.0.3"
+  spec.version      = "1.0.4"
   spec.summary      = "Tercept SDK for analytics"
   spec.description  = "This static iOS library is used for collecting the Performance Data Platform for Digital Publishers"
   spec.homepage     = "http://tercept.com"
@@ -50,6 +50,8 @@ Pod::Spec.new do |spec|
   ## spec.libraries = 'c++'
   ## spec.frameworks = 'GLKit'
 
+  spec.pod_target_xcconfig = { 'VALID_ARCHS' => 'arm64 x86_64' }
+ 
   spec.xcconfig = { 'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES' ,
     'OTHER_LDFLAGS' => '-ObjC -lTerceptSDK' } 
     
