@@ -22,7 +22,9 @@
 // OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
+//
 //  Use this file to import your target's public headers that you would like to expose to Swift.
+//
 
 // #import <TerceptSDK\TerceptOptimization.swift>
 
