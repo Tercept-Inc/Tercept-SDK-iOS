@@ -34,7 +34,7 @@ FOUNDATION_EXPORT const unsigned char TerceptSDKVersionString[];
 
 // #import <TerceptSDK/PublicHeader.h>
 
-#import <TerceptSDK/TerceptOptimization>
+// #import <TerceptSDK/TerceptOptimization>
 // #import <TerceptSDK/TerceptSDK.h>
 // #import <TerceptSDK/TerceptSDK-Bridging-Header.h>
 

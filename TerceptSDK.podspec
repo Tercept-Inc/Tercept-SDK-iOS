@@ -24,7 +24,7 @@
 
 Pod::Spec.new do |spec|
   spec.name         = "TerceptSDK"
-  spec.version      = "1.0.0"
+  spec.version      = "1.0.2"
   spec.summary      = "Tercept SDK for analytics"
   spec.description  = "This static iOS library is used for collecting the Performance Data Platform for Digital Publishers"
   spec.homepage     = "http://tercept.com"
