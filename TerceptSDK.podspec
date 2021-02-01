@@ -39,13 +39,13 @@ Pod::Spec.new do |spec|
   spec.ios.deployment_target = "12.0"
 
   spec.source              = { :git => "https://github.com/Tercept-Inc/Tercept-SDK-iOS.git", :tag => "#{spec.version}" }
-  spec.source_files        = "\*"
+  spec.source_files        = "/*"
 
   # spec.preserve_paths      = "\libTerceptSDK.a"
-  spec.preserve_paths      = "\"
+  spec.preserve_paths      = "/**/*.*"
   
-  spec.public_header_files = "\*.h"
-  spec.vendored_libraries  = "\libTerceptSDK.a"
+  spec.public_header_files = "/*.h"
+  spec.vendored_libraries  = "/libTerceptSDK.a"
 
   spec.requires_arc        = true
   spec.static_framework    = true
