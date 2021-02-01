@@ -56,7 +56,7 @@ Pod::Spec.new do |spec|
   spec.pod_target_xcconfig = { 'VALID_ARCHS' => 'arm64 x86_64' }
  
   spec.xcconfig = { 'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES' ,
-                    'OTHER_LDFLAGS'                  => '-ObjC -lTerceptSDK' 
+                    'OTHER_LDFLAGS'                  => '-ObjC -lTerceptSDK' ,
                     'DEFINES_MODULE'   => 'YES' }
  
     
