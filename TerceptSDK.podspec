@@ -57,7 +57,7 @@ Pod::Spec.new do |spec|
  
   spec.xcconfig = { 'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES' ,
                     'OTHER_LDFLAGS'                  => '-ObjC -lTerceptSDK' 
-                    'DEFINES_MODULE'   => 'YES'. }
+                    'DEFINES_MODULE'   => 'YES' }
  
     
     ##  'LIBRARY_SEARCH_PATHS' => '$(SRCROOT)/**' ,
