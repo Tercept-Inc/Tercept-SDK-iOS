@@ -24,7 +24,7 @@
 
 Pod::Spec.new do |spec|
   spec.name         = "TerceptSDK"
-  spec.version      = "1.0.6"
+  spec.version      = "1.0.9"
   spec.summary      = "Tercept SDK for analytics"
   spec.description  = "This static iOS library is used for collecting the Performance Data Platform for Digital Publishers"
   spec.homepage     = "http://tercept.com"
@@ -39,7 +39,7 @@ Pod::Spec.new do |spec|
   spec.ios.deployment_target = "12.0"
 
   spec.source              = { :git => "https://github.com/Tercept-Inc/Tercept-SDK-iOS.git", :tag => "#{spec.version}" }
-  spec.source_files        = "/*"
+  spec.source_files        = "/**/*"
 
   # spec.preserve_paths      = "/libTerceptSDK.a"
   spec.preserve_paths      = "/**/*.*"
