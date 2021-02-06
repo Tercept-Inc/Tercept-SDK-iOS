@@ -25,7 +25,7 @@
 
 Pod::Spec.new do |spec|
   spec.name               = 'TerceptSDK'
-  spec.version            = '1.0.17'
+  spec.version            = '1.0.18'
   spec.author             = { 'Gourav Chindlur' => 'hello@tercept.com' }
   spec.license            = { :type => 'BSD', :file => 'LICENSE' }
   spec.homepage           = 'http://tercept.com'
@@ -38,7 +38,9 @@ Pod::Spec.new do |spec|
   spec.xcconfig           = {
                               'OTHER_LDFLAGS'                  => '-ObjC -lTerceptSDK'
                             }
-  spec.pod_target_xcconfig  = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-  spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  spec.pod_target_xcconfig  = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' ,
+                                'EXCLUDED_ARCHS[sdk=watchsimulator*]'  => 'arm64' }
 
+  spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' ,
+                                'EXCLUDED_ARCHS[sdk=watchsimulator*]'  => 'arm64' }
 end
