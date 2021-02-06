@@ -24,8 +24,6 @@
 
 #ifndef PublicHeader_h
 #define PublicHeader_h
-// #import <TerceptSDK/TerceptOptimization>
 #import <TerceptSDK/TerceptSDK.h>
 #import <TerceptSDK/TerceptSDK-Bridging-Header.h>
-
 #endif /* PublicHeader_h */

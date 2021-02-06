@@ -31,12 +31,6 @@ FOUNDATION_EXPORT double TerceptSDKVersionNumber;
 FOUNDATION_EXPORT const unsigned char TerceptSDKVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like
-
 // #import <TerceptSDK/PublicHeader.h>
-
-// #import <TerceptSDK/TerceptOptimization>
-// #import <TerceptSDK/TerceptSDK.h>
-// #import <TerceptSDK/TerceptSDK-Bridging-Header.h>
-
 
 

@@ -22,37 +22,41 @@
 # OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 # OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-# Spec file format : https://guides.cocoapods.org/syntax/podspec.html#specification
+# Spec file format : https://guides.cocoapods.org/syntax/podspec.html
 
 Pod::Spec.new do |spec|
   spec.name         = 'TerceptSDK'
   spec.version      = '1.0.13'
 
-  spec.author       = { "Gourav Chindlur" => "hello@tercept.com" }
+  spec.author       = { 'Gourav Chindlur' => 'hello@tercept.com' }
   # spec.social_media_url = 'https://twitter.com/cocoapods'
-  spec.license      = { :type => 'BSD2', :file => 'LICENSE' }
+
+  spec.license      = { :type => 'BSD', :file => 'LICENSE' }
   spec.homepage     = 'http://tercept.com'
 
   spec.summary      = 'Tercept SDK for analytics'
-  spec.description  = <<-DESC
-                      This static iOS library is used for collecting the Performance Data Platform for Digital Publishers"
-                      DESC
+#  spec.description  = 'This static iOS library is used for collecting the Performance Data Platform for Digital Publishers'
 
-# spec.requires_arc        = true. # Default is true
+  # Default is true
+  # spec.requires_arc        = true 
   spec.static_framework    = true
   
-  # spec.platform              = :ios, '12.0'
+#  spec.platform = :ios
+
   # spec.ios.deployment_target = '12.0'
   # spec.resource              = 'icon.png'
   # spec.resources             = 'Resources/*.png'
-  # spec.module_name           = 'TerceptSDK'. # By default will use spec.name
+
+  # By default will use spec.name
+  # spec.module_name           = 'TerceptSDK' 
 
 
   # spec.source                = { :git => 'https://github.com/Tercept-Inc/Tercept-SDK-iOS.git', :tag => "#{spec.version}" }
   spec.source                  = { :git => 'https://github.com/Tercept-Inc/Tercept-SDK-iOS.git', :tag => spec.version.to_s }
-  spec.source_files            = "./**/*"
+#  spec.source_files            = './**/*'
 
-  # spec.public_header_files   = "./*.h".  # If no public headers are specified then all the headers in source_files are considered public.
+  # If no public headers are specified then all the headers in source_files are considered public.
+  # spec.public_header_files   = './*.h'
 
   spec.vendored_libraries      = 'libTerceptSDK.a'
   ## spec.libraries = 'c++'
@@ -60,20 +64,21 @@ Pod::Spec.new do |spec|
 
   
   # spec.resources             = ['TerceptSDK.swiftmodule/*', 'TerceptSDK.swiftmodule/Project/*']
-  spec.resource_bundles.           = {
-    'TerceptSDKswiftmodule'        => ['TerceptSDK.swiftmodule/*'],
-    'TerceptSDKswiftmoduleProject' => ['TerceptSDK.swiftmodule/Project/*']
-  }
+
+#  spec.resource_bundles        = {
+#    'TerceptSDKswiftmodule'        => ['TerceptSDK.swiftmodule/*'],
+#    'TerceptSDKswiftmoduleProject' => ['TerceptSDK.swiftmodule/Project/*']
+#  }
   
-  # spec.preserve_paths      = "/libTerceptSDK.a"
-  # spec.preserve_paths      = "./**/*"
+  # spec.preserve_paths      = '/libTerceptSDK.a'
+  # spec.preserve_paths      = './**/*'
   
   
   # spec.pod_target_xcconfig = { 'VALID_ARCHS' => 'arm64 x86_64' }
  
-  spec.xcconfig = {
-                    'OTHER_LDFLAGS'                  => '-ObjC -lTerceptSDK'
-                  }
+#  spec.xcconfig = {
+#                    'OTHER_LDFLAGS'                  => '-ObjC -lTerceptSDK'
+#                  }
  
     ##  'DEFINES_MODULE'                 => 'YES'
     ##  'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES' ,
