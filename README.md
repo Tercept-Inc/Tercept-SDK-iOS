@@ -18,4 +18,4 @@ pod 'TerceptSDK'
 
 ## License
 
-Alamofire is released under the BSD 2-Clause "Simplified" License. [See LICENSE](https://github.com/Tercept-Inc/Tercept-SDK-iOS/blob/main/LICENSE) for details.
+Tercept SDK is released under the BSD 2-Clause "Simplified" License. [See LICENSE](https://github.com/Tercept-Inc/Tercept-SDK-iOS/blob/main/LICENSE) for details.

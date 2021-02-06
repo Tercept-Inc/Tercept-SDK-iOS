@@ -25,7 +25,7 @@
 
 Pod::Spec.new do |spec|
   spec.name               = 'TerceptSDK'
-  spec.version            = '1.0.14'
+  spec.version            = '1.0.15'
   spec.author             = { 'Gourav Chindlur' => 'hello@tercept.com' }
   spec.license            = { :type => 'BSD', :file => 'LICENSE' }
   spec.homepage           = 'http://tercept.com'
