@@ -34,13 +34,19 @@ Pod::Spec.new do |spec|
 
   spec.source             = { :git => 'https://github.com/Tercept-Inc/Tercept-SDK-iOS.git', :tag => spec.version.to_s }
 
+  spec.platform              = :ios, "12.0"
+  spec.ios.deployment_target = "12.0"
+  
   spec.vendored_libraries = 'libTerceptSDK.a'
   spec.xcconfig           = {
                               'OTHER_LDFLAGS'                  => '-ObjC -lTerceptSDK'
                             }
+
   spec.pod_target_xcconfig  = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' ,
                                 'EXCLUDED_ARCHS[sdk=watchsimulator*]'  => 'arm64' }
 
   spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' ,
                                 'EXCLUDED_ARCHS[sdk=watchsimulator*]'  => 'arm64' }
+
+
 end
