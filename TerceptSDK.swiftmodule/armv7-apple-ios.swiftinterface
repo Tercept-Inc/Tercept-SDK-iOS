@@ -1,0 +1,29 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)
+// swift-module-flags: -target armv7-apple-ios9.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name TerceptSDK
+import Foundation
+import Swift
+import UIKit
+import WebKit
+@objc public class TerceptOptimization : ObjectiveC.NSObject {
+  public init(_ networkCode: Swift.String)
+  public func initParams(_ activity: UIKit.UIViewController, _ IDFA: Swift.String, _ IDFV: Swift.String, _ params: [Swift.String : Any]?)
+  public func initParams(_ activity: UIKit.UIViewController, _ IDFA: Swift.String, _ IDFV: Swift.String)
+  public func fetch(_ adunits: [Swift.String]?)
+  public func logEvent(_ adunit: Swift.String?, _ event: Swift.String?)
+  public func sendEventsData()
+  public func getCustomTargetingKeys(_ adunit: Swift.String?) -> Swift.Dictionary<Swift.String?, Swift.String?>
+  @objc deinit
+  @objc override dynamic public init()
+}
+public protocol Callable {
+  associatedtype R
+  func call() -> Self.R
+}
+public protocol TaskRunner_Callback {
+  associatedtype R
+  func onComplete(result: Self.R)
+}
+extension UIDevice {
+  public static let modelName: Swift.String
+}

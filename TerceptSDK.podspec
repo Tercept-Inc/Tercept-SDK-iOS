@@ -25,7 +25,7 @@
 
 Pod::Spec.new do |spec|
   spec.name               = 'TerceptSDK'
-  spec.version            = '1.0.21'
+  spec.version            = '1.0.22'
   spec.author             = { 'Gourav Chindlur' => 'hello@tercept.com' }
   spec.license            = { :type => 'BSD', :file => 'LICENSE' }
   spec.homepage           = 'http://tercept.com'
@@ -34,12 +34,14 @@ Pod::Spec.new do |spec|
 
   spec.source             = { :git => 'https://github.com/Tercept-Inc/Tercept-SDK-iOS.git', :tag => spec.version.to_s }
 
-  spec.platform              = :ios, "12.0"
-  spec.ios.deployment_target = "12.0"
+  spec.platform              = :ios, "9.0"
+  spec.ios.deployment_target = "9.0"
   
   spec.vendored_libraries = 'libTerceptSDK.a'
   spec.xcconfig           = {
-                              'OTHER_LDFLAGS'                  => '-ObjC -lTerceptSDK'
+                              'OTHER_LDFLAGS'                  => '-ObjC -lTerceptSDK' ,
+                              'LIBRARY_SEARCH_PATHS' => "$(SRCROOT)/Pods/**" ,
+                              'IMPORT_PATHS' => "$(SRCROOT)/Pods/**"
                             }
 
   spec.pod_target_xcconfig  = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' ,
