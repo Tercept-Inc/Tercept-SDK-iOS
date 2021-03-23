@@ -2,9 +2,9 @@
 This static iOS library is used for collecting the Performance Data Platform for Digital Publishers
 
 ## Requirements
-- iOS 12.0+
-- Xcode 11+
-- Swift 5.1+
+- iOS 9.0+
+- Xcode 12+
+- Swift 5.3+
 
 ## Installation
 
