@@ -41,6 +41,7 @@ Pod::Spec.new do |spec|
   spec.xcconfig           = {
                               'OTHER_LDFLAGS'                  => '-ObjC -lTerceptSDK' ,
                               'LIBRARY_SEARCH_PATHS' => "$(SRCROOT)/Pods/**" ,
+                              'HEADER_SEARCH_PATH' => "$(SRCROOT)/Pods/**",
                               'IMPORT_PATHS' => "$(SRCROOT)/Pods/**"
                             }
 

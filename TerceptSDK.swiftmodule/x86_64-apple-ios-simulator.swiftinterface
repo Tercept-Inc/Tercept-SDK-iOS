@@ -10,8 +10,10 @@ import WebKit
   public func initParams(_ activity: UIKit.UIViewController, _ IDFA: Swift.String, _ IDFV: Swift.String, _ params: [Swift.String : Any]?)
   public func initParams(_ activity: UIKit.UIViewController, _ IDFA: Swift.String, _ IDFV: Swift.String)
   public func fetch(_ adunits: [Swift.String]?)
-  public func logEvent(_ adunit: Swift.String?, _ event: Swift.String?)
+  public func logEvent(_ adunit: Swift.String?, _ event: Swift.String?) -> Swift.Bool
+  public func getEventsData() -> [Swift.String : Any]?
   public func sendEventsData()
+  public func setCustomParameters(_ params: [Swift.String : Swift.String])
   public func getCustomTargetingKeys(_ adunit: Swift.String?) -> Swift.Dictionary<Swift.String?, Swift.String?>
   @objc deinit
   @objc override dynamic public init()
