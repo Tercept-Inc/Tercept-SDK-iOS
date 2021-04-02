@@ -14,7 +14,7 @@ import WebKit
   public func getEventsData() -> [Swift.String : Any]?
   public func sendEventsData()
   public func setCustomParameters(_ params: [Swift.String : Swift.String])
-  public func getCustomTargetingKeys(_ adunit: Swift.String?) -> Swift.Dictionary<Swift.String?, Swift.String?>
+  public func getCustomTargetingKeys(_ adunit: Swift.String?) -> Swift.Dictionary<Swift.String, Swift.String?>
   @objc deinit
   @objc override dynamic public init()
 }
