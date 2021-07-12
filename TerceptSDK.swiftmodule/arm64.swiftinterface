@@ -6,7 +6,17 @@ import SafariServices
 import Swift
 import UIKit
 import WebKit
+public protocol Callable {
+  associatedtype R
+  func call() -> Self.R
+}
+public protocol TaskRunner_Callback {
+  associatedtype R
+  func onComplete(result: Self.R)
+}
 @objc public class TerceptOptimization : ObjectiveC.NSObject {
+  public static let sdkVersion: Swift.String
+  public static var isDebugMode: Swift.Bool
   public init(_ networkCode: Swift.String)
   public func initParams(_ IDFA: Swift.String, _ IDFV: Swift.String, _ params: [Swift.String : Any]?)
   public func initParams(_ IDFA: Swift.String, _ IDFV: Swift.String)
@@ -19,14 +29,6 @@ import WebKit
   public func getCustomTargetingKeys(_ adunit: Swift.String?) -> Swift.Dictionary<Swift.String, Swift.String?>
   @objc override dynamic public init()
   @objc deinit
-}
-public protocol Callable {
-  associatedtype R
-  func call() -> Self.R
-}
-public protocol TaskRunner_Callback {
-  associatedtype R
-  func onComplete(result: Self.R)
 }
 extension UIDevice {
   public static let modelName: Swift.String
